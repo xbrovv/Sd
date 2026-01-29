@@ -11,7 +11,7 @@
     "restart": "pm2 restart lite"
   },
   "dependencies": {
-       "@whiskeysockets/baileys": "npm:baileys-pro@latest",
+       "@whiskeysockets/baileys": "^7.0.0-rc.9",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/yt-dl.js": "1.0.5",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
@@ -20,7 +20,7 @@
     "pino": "^7.0.5",
     "pm2": "^6.0.5",
     "util": "^0.12.4",
-    "jimp": "^0.16.1",
+    "jimp": "^1.6.0",
     "express": "latest",
     "moment-timezone": "^0.5.45",
     "axios": "^1.2.5",
