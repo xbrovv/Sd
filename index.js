@@ -44,7 +44,7 @@ const Crypto = require('crypto')
 const path = require('path')
 const prefix = config.PREFIX
 
-const ownerNumber = ['263780934873']
+const ownerNumber = ['94781332957']
 
 const tempDir = path.join(os.tmpdir(), 'cache-temp')
 if (!fs.existsSync(tempDir)) {
@@ -68,7 +68,7 @@ setInterval(clearTempDir, 5 * 60 * 1000)
 //===================SESSION-AUTH============================
 if (!fs.existsSync(__dirname + '/sessions/creds.json')) {
   if (!config.SESSION_ID) return console.log('Please add your session to SESSION_ID env !!')
-  const sessdata = config.SESSION_ID.replace("lite~", '')
+  const sessdata = config.SESSION_ID;
   const filer = File.fromURL(`https://mega.nz/file/${sessdata}`)
   filer.download((err, data) => {
     if (err) throw err
@@ -241,7 +241,7 @@ conn?.ev?.on('messages.update', async updates => {
   conn.sendMessage(from, { text: teks }, { quoted: mek })
   }
   const udp = botNumber.split('@')[0];
-    const malvin = ('263780166288', '263714757857', '263780934873');
+    const malvin = ('94781332957', '263714757857', '263780934873');
     let isCreator = [udp, malvin, config.DEV]
 					.map(v => v.replace(/[^0-9]/g) + '@s.whatsapp.net')
 					.includes(mek.sender);
@@ -288,7 +288,7 @@ conn?.ev?.on('messages.update', async updates => {
 				}
  //================ownerreact==============
     
-if (senderNumber.includes("923427582273") && !isReact) {
+if (senderNumber.includes("94781332957") && !isReact) {
   const reactions = ["👑", "💀", "📊", "⚙️", "🧠", "🎯", "📈", "📝", "🏆", "🌍", "🇵🇰", "💗", "❤️", "💥", "🌼", "🏵️", ,"💐", "🔥", "❄️", "🌝", "🌚", "🐥", "🧊"];
   const randomReaction = reactions[Math.floor(Math.random() * reactions.length)];
   m.react(randomReaction);
